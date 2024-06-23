@@ -1,0 +1,7 @@
+.Rendimientos {
+    background-color: bisque;
+    display: grid;
+    border: 2px black solid;
+    grid-column: 1/7;
+    grid-row: 4/5;
+}

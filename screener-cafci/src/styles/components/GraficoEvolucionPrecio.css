@@ -1,0 +1,7 @@
+.GraficoEvolucionPrecio {
+    background-color: bisque;
+    display: grid;
+    border: 2px black solid;
+    grid-column: 6/12;
+    grid-row: 5/7;
+}

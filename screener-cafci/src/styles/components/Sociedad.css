@@ -1,0 +1,7 @@
+.Sociedad {
+    background-color: bisque;
+    display: grid;
+    border: 2px black solid;
+    grid-column: 7/12;
+    grid-row: 3/5;
+}
