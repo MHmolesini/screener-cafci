@@ -1,7 +1,47 @@
 .Buscador {
-    background-color: bisque;
+    background-color: #252736;
+    height: 50px;
     display: grid;
-    border: 2px black solid;
     grid-column: 7/12;
     grid-row: 1;
+    border-radius: 10px;
+}
+
+.Buscador_interior {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.Icon {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.Icon img {
+    height: 60%;
+    width: 60%;
+}
+
+input {
+    background-color: #252736;
+    height: 100%;
+    width: 80%;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #FAFAFA;
+    font-size: 1rem;
 }
