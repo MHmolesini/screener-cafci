@@ -5,6 +5,7 @@
     grid-column: 7/12;
     grid-row: 1;
     border-radius: 10px;
+    margin: 40px 40px 0px 0px;
 }
 
 .Buscador_interior {
@@ -35,6 +36,8 @@ input {
     border: none;
     border-radius: 10px;
     box-shadow: none;
+    position: relative;
+    color: #FAFAFA;
 }
 
 input:focus {
@@ -44,4 +47,44 @@ input:focus {
 input::placeholder {
     color: #FAFAFA;
     font-size: 1rem;
+}
+
+
+/*  */
+.Search_lista {
+    /* Quita los estilos de lista por defecto */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Posiciona la lista absolutamente respecto al contenedor */
+    position: absolute;
+    background-color: white;
+    /* Añade un borde para separar la lista del resto del contenido */
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index: 1;
+
+    max-height: 200px;
+    /* Ajusta este valor según sea necesario */
+    overflow-y: auto;
+    /* Permite el scroll vertical cuando la lista es más larga que el tamaño máximo */
+    /* width: calc(100% - 2px);
+    Tamaño igual al input menos el borde (2px) */
+}
+
+.Search_lista li {
+    list-style: none;
+} 
+
+.Search_lista strong {
+    padding: 10px;
+}
+
+.Search_item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Search_item:hover {
+    background-color: #f0f0f0;
 }

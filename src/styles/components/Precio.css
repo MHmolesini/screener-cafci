@@ -1,5 +1,5 @@
 .Precio {
-    background-color: bisque;
+    /* background-color: bisque; */
     display: grid;
     border: 2px black solid;
     grid-column: 1/12;
