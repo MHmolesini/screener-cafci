@@ -68,7 +68,6 @@ const Buscador = ({ onSelectFondo }) => {
       console.error("onSelectFondo no está definido");
     }
   };
-  console.log(onSelectFondo)
 
   return (
     <>

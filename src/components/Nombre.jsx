@@ -8,7 +8,7 @@ const Nombre = ({ fondo }) => {
       <div className="Nombre">
         {fondo ? (
           <>
-            <h1>{fondo.nombre}</h1>
+            <h1>{fondo.model.nombre}</h1>
           </>
         ) : (
           <p>No hay fondo seleccionado</p>

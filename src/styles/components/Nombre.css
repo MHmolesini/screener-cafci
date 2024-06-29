@@ -1,6 +1,5 @@
 .Nombre {
     display: grid;
-    border: 2px black solid;
     grid-column: 1/7;
     grid-row: 1;
     margin: 40px 0px 0px 40px;

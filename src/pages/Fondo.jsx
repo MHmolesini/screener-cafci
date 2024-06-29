@@ -19,9 +19,9 @@ const Fondo = () => {
   // Función para manejar la selección de un fondo
   const handleSelectFondo = async (fondoId, claseId) => {
     try {
-      const { model } = await getFicha(fondoId, claseId);
-      setSelectedFondo(model);
-      console.log("Fondo, model: ", model)
+      const { data } = await getFicha(fondoId, claseId);
+      setSelectedFondo(data);
+      console.log("Fondo, data: ", data)
     } catch (error) {
       console.error("Error al obtener los detalles del fondo:", error);
     }
@@ -32,7 +32,7 @@ const Fondo = () => {
       <div className="fondo">
         <Nombre fondo={selectedFondo}/>  {/* fondo={selectedFondo} */}
         <Buscador onSelectFondo={handleSelectFondo}/> {/* onSelectFondo={handleSelectFondo} */}
-        <Precio />
+        <Precio fondo={selectedFondo}/>
         <DatosFondo />
         <Rendimientos />
         <Sociedad />

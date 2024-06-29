@@ -21,10 +21,7 @@ export const getFicha = async (fondoId, claseId) => {
     }
     
     // Retorna el objeto 'jsonResponse'
-    return {
-        model: jsonResponse.data.model,
-        info: jsonResponse.data.info  // Incluye la información de 'info' en el retorno de la función
-      };
+    return {data: jsonResponse.data};
   } catch (error) {
     // Muestra un error en la consola y lanza el error
     console.error('Error de la API:', error);

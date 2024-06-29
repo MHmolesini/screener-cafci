@@ -1,7 +1,64 @@
 .Precio {
-    /* background-color: bisque; */
     display: grid;
     border: 2px black solid;
     grid-column: 1/12;
     grid-row: 2;
+    margin: 0px 40px;
+}
+
+.Precio_componente {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lado {
+    display: flex;
+}
+
+.Precio_bloque {
+    align-items: flex-end;
+    min-width: 300px;
+    align-content: space-around;
+}
+
+.Precio_title {
+    color: #CACACA;
+    font-size: 16px;
+}
+
+.Precio_valores {
+    display: flex;
+    flex-direction: row;
+}
+
+.Precio_valores p {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.derecha .Precio_bloque p {
+    text-align: right;
+}
+
+.derecha .Precio_bloque .Precio_valores {
+    justify-content: flex-end;
+}
+
+.Variacion {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.Variacion p {
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+.VariacionPositiva p {
+    color: green;
+}
+
+.VariacionNegativa p {
+    color: red;
 }
