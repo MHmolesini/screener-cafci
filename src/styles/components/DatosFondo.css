@@ -1,7 +1,42 @@
 .DatosFondo {
-    background-color: bisque;
+    background-color: #FAFAFA;
     display: grid;
-    border: 2px black solid;
     grid-column: 1/7;
     grid-row: 3/4;
+    margin-left: 40px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.DatosFondo p {
+    font-size: 16px;
+    color: black;
+}
+
+.DatosFondo_Componente {
+    display: flex;
+    flex-direction: column;
+}
+
+.DatosFondo_title {
+    margin-bottom: 10px;
+}
+
+.DatosFondo_cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.DatosFondo_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(50% - 10px);
+    /* Two items per row with space in between */
+    margin-bottom: 20px;
+}
+
+img {
+    height: 20px;
+    padding-right: 10px;
 }

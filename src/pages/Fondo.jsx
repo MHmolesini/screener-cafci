@@ -33,7 +33,7 @@ const Fondo = () => {
         <Nombre fondo={selectedFondo}/>  {/* fondo={selectedFondo} */}
         <Buscador onSelectFondo={handleSelectFondo}/> {/* onSelectFondo={handleSelectFondo} */}
         <Precio fondo={selectedFondo}/>
-        <DatosFondo />
+        <DatosFondo fondo={selectedFondo}/>
         <Rendimientos />
         <Sociedad />
         <GraficoRendimientosMensuales />

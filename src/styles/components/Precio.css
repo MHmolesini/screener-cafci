@@ -1,6 +1,6 @@
 .Precio {
     display: grid;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     grid-column: 1/12;
     grid-row: 2;
     margin: 0px 40px;
