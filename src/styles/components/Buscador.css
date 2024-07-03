@@ -61,7 +61,6 @@ input::placeholder {
     background-color: white;
     /* Añade un borde para separar la lista del resto del contenido */
     border: 1px solid #ccc;
-    width: 100%;
     z-index: 1;
 
     max-height: 200px;

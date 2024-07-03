@@ -22,7 +22,6 @@ const Buscador = ({ onSelectFondo }) => {
         // Llama a la función para obtener la lista de fondos desde la API
         const { data } = await getListaDeFondos();
         setFondos(data); // Actualiza el estado con la lista de fondos
-        console.log("Buscador - fetchFondos - data: ", data)
       } catch (error) {
         console.error("Error al obtener la lista de fondos:", error);
       }
@@ -53,15 +52,11 @@ const Buscador = ({ onSelectFondo }) => {
     }
   }, [fondoNombre, fondos]);
 
-  console.log("Buscador - useEffect - fondoNombre", fondoNombre)
-  console.log("Buscador - useEffect - fondos", fondos)
-
   // Maneja la selección de un fondo del desplegable
   const handleSelectFondo = (fondo, clase) => {
     setFondoNombre(clase.nombre);
     setFiltrosFondos([]);
     setShowDropdown(false);
-    console.log(fondo, clase, clase.nombre)
     if (onSelectFondo) {
       onSelectFondo(fondo.id, clase.id);
     } else {

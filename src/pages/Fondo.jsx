@@ -35,10 +35,10 @@ const Fondo = () => {
         <Precio fondo={selectedFondo}/>
         <DatosFondo fondo={selectedFondo}/>
         <Rendimientos />
-        <Sociedad />
+        <Sociedad fondo={selectedFondo}/>
         <GraficoRendimientosMensuales />
         <GraficoEvolucionPrecio />
-        <Honorarios />
+        <Honorarios fondo={selectedFondo}/>
         <GraficoPonderacionActivos />
         <TablaActivos />
       </div>

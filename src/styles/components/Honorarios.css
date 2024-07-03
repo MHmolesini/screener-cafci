@@ -1,7 +1,35 @@
 .Honorarios {
-    background-color: bisque;
+    background-color: #252736;
     display: grid;
-    border: 2px black solid;
     grid-column: 1/12;
     grid-row: 7;
+    margin: 0px 40px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Honorarios_Componente {
+    display: flex;
+    flex-direction: row;
+}
+
+.Honorarios_cuerpo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.Honorarios_datos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Honorarios_items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* width: calc(50% - 10px); */
+    margin-bottom: 10px;
+    padding-right: 20px;
 }
