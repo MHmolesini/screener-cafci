@@ -1,7 +1,36 @@
 .Rendimientos {
-    background-color: bisque;
+    background-color: #0175F7;
     display: grid;
-    border: 2px black solid;
     grid-column: 1/7;
     grid-row: 4/5;
+    margin-left: 40px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Rendimientos p {
+    font-size: 20px;
+}
+
+.Rendimientos_Componente {
+    display: flex;
+    flex-direction: column;
+}
+
+.Rendimientos_title {
+    margin-bottom: 10px;
+    color: #CACACA;
+}
+
+.Rendimientos_cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Rendimientos_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
 }
